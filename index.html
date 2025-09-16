@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephanie Elsayed - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    a { color: #a259ff; text-decoration: none; }
+
+    /* Navbar */
+    nav {
+      background: #1a1a1a;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #eee;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #a259ff;
+    }
+
+    header {
+      background: #2d0a3f;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #a259ff;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #a259ff;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #a259ff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #2d0a3f;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin: 5px;
+      font-size: 0.9rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card .images {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .card.lingo .images img {
+      width: 130px;   /* narrower */
+      height: 350px;  /* taller */
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .card.lingo .images img:hover {
+      transform: scale(1.05);
+    }
+    .card.shopeasy .images img {
+      width: 220px;   /* wider */
+      height: 180px;  /* shorter */
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .card.shopeasy .images img:hover {
+      transform: scale(1.05);
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #a259ff;
+      font-size: 1.3rem;
+    }
+    .tags span {
+      display: inline-block;
+      background: #2d0a3f;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin: 4px 4px 0 0;
+    }
+    footer {
+      background: #2d0a3f;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="images/me.jpg" alt="Stephanie Elsayed photo">
+    <h1>Stephanie Elsayed</h1>
+    <p>📱 Mobile App Developer</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>👩‍💻 About Me</h2>
+    <p>
+      I am a passionate Mobile App Developer with experience in building modern, user-friendly applications using Flutter and other technologies. 
+      I enjoy creating apps that solve real problems and deliver smooth user experiences. 
+      Over the years, I have worked on different kinds of projects ranging from educational apps to e-commerce solutions, always focusing on quality and creativity. 
+      My goal is to continue growing as a developer, explore new technologies, and contribute to meaningful projects that make people's lives easier. 
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <h2>⚡ Skills</h2>
+    <div class="skills">
+      <span>🎯 Dart</span>
+      <span>💻 C#</span>
+      <span>🔧 C</span>
+      <span>🌐 HTML</span>
+      <span>🎨 CSS</span>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <h2>🎓 Education</h2>
+    <p><strong>Bachelor's Degree in Computer Science</strong><br>
+    University Name – Graduation Year</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="projects">
+      
+      <!-- Project 1 -->
+      <div class="card lingo">
+        <div class="images">
+          <img src="images/g.jpg" alt="LingoDeutsch screenshot 1">
+          <img src="images/e.jpg" alt="LingoDeutsch screenshot 2">
+          <img src="images/r.jpg" alt="LingoDeutsch screenshot 3">
+        </div>
+        <h3>📘 LingoDeutsch</h3>
+        <p>German learning app with vocabulary categories (Animals, Colors, Family, Food, Numbers, Clothes). Built with Flutter & Firebase.</p>
+        <div class="tags">
+          <span>🔥 Flutter</span><span>📚 Education</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card shopeasy">
+        <div class="images">
+          <img src="images/ecommerce1.jpg" alt="ShopEasy screenshot 1">
+          <img src="images/ecommerce2.jpg" alt="ShopEasy screenshot 2">
+          <img src="images/ecommerce3.jpg" alt="ShopEasy screenshot 3">
+        </div>
+        <h3>🛒 ShopEasy</h3>
+        <p>E-commerce mobile app with cart, payments, and push notifications. Designed for a clean shopping experience. 🤝 (Teamwork)</p>
+        <div class="tags">
+          <span>⚡ Flutter</span><span>🎯 Dart</span><span>💳 Stripe</span><span>🤝 Teamwork</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <h2>📬 Get in Touch</h2>
+    <p>📧 Email: <a href="mailto:stephanieelsayed@gmail.com">stephanieelsayed@gmail.com</a></p>
+    <p>📱 Phone: 01113069668</p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/stephanieelsayed09" target="_blank">linkedin.com/in/stephanieelsayed09</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Stephanie Elsayed. All rights reserved. 🌟</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
